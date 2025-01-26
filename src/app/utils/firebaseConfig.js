@@ -1,17 +1,17 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAGAJgyi287zEgycxySIa8PFz5Y8VgRilM",
-  authDomain: "cleopatra-adminpanel.firebaseapp.com",
-  projectId: "cleopatra-adminpanel",
-  storageBucket: "cleopatra-adminpanel.firebasestorage.app",
-  messagingSenderId: "544725130497",
-  appId: "1:544725130497:web:0c0ab223105c2be5294f00",
-  measurementId: "G-1C7C43K9N0"
+  apiKey: "AIzaSyCA-wEduxw8zUNczCcpCYrVDKy0En2oPAw",
+  authDomain: "final-hackathon-3f4d2.firebaseapp.com",
+  projectId: "final-hackathon-3f4d2",
+  storageBucket: "final-hackathon-3f4d2.firebasestorage.app",
+  messagingSenderId: "42009986136",
+  appId: "1:42009986136:web:7fec4d85258ab266d5b62d",
+  measurementId: "G-3XSBP7S00D"
 };
 
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
 export const auth = getAuth(app);
+export const db = getFirestore(app);

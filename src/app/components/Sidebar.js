@@ -28,15 +28,8 @@ const Sidebar = () => {
 
   const menuItems = [
     { name: 'Dashboard', icon: Home, link: '/admin/Dashboard' },
-    { name: 'Products', icon: Watch, link: '/admin/Products' },
-    { name: 'Categories', icon: Tag, link: '/admin/Categories' },
+    { name: 'Applications', icon: Watch, link: '/admin/Applications' },
     { name: 'Customers', icon: Users, link: '/admin/Users' },
-    { name: 'Order List', icon: FileText, link: '/admin/OrderList' },
-    { name: 'Coupon', icon: Ticket, link: '/admin/Coupon' },
-    { name: 'Extras', icon: ShoppingCart, link: '/admin/CheckOptions' },
-    { name: 'Currency Price', icon: Settings, link: '/admin/Rates' },
-    { name: 'Contact Inqueries', icon: Contact, link: '/admin/ContactInqueries' },
-    { name: 'Web Subscribers', icon: UserPlus, link: '/admin/WebSubscribers' },
   ];
 
   useEffect(() => {
@@ -77,7 +70,7 @@ const Sidebar = () => {
         } md:translate-x-0`}
       >
         <div className="p-6">
-          <img src="/Cleopatra.png" alt="Logo" />
+          <img src="https://saylaniwelfareusa.com/static/media/logo_saylaniwelfareusa.22bf709605809177256c.png" alt="Logo" />
         </div>
 
         <nav className="flex-1 overflow-y-auto">
