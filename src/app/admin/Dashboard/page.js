@@ -10,7 +10,7 @@ export default function Dashboard() {
   const [recentOrder, setRecentOrder] = useState([]);
 
   let ordersPaid = orders?.filter((order)=> order.paymentStatus === "paid")
-  let totalIncome = ordersPaid.reduce((acc, order)=> acc + order.totalAmount ,0)
+  // let totalIncome = ordersPaid.reduce((acc, order)=> acc + order.totalAmount ,0)
   let arrived = orders?.filter((order)=> order.status === "delivered")
   let pending = orders?.filter((order)=> order.status === "pending")
   let cancel = orders?.filter((order)=> order.status === "cancel")
@@ -36,8 +36,8 @@ export default function Dashboard() {
   return (
     <div className="p-2 min-h-screen">
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-        <Card title="Total Income" value={new Intl.NumberFormat("en-US").format(totalIncome)} change={5.2} />
-        <Card  title="Users" value={users?.length} change={-3.4} />
+        {/* <Card title="Total Income" value={new Intl.NumberFormat("en-US").format(totalIncome)} change={5.2} /> */}
+        {/* <Card  title="Users" value={users?.length} change={-3.4} /> */}
         <Card title="Orders Paid" value={ordersPaid.length} change={8.7} />
         <Card title="Total Sales" value={orders?.length} change={-1.2} />
       </div>
