@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-galaxy: 'Galaxy Regular', serif;
+  --font-domine: 'Domine', serif;
+  --font-merriweather: 'Merriweather', serif;
+  --font-montserratMedium: 'Montserrat', serif;
+  --font-montserratSemiBold: 'Montserrat', serif;
+  --font-montserratRegular: 'Montserrat', serif;
+}
+/* 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-galaxy {
+  font-family: var(--font-galaxy);
+}
+
+.font-domine {
+  font-family: var(--font-domine);
+}
+
+.font-merriweather {
+  font-family: var(--font-merriweather);
+}
+
+.font-montserratMedium {
+  font-family: var(--font-montserratMedium);
+}
+
+.font-montserratSemiBold {
+  font-family: var(--font-montserratSemiBold);
+}
+
+.font-montserratRegular {
+  font-family: var(--font-montserratRegular);
+}
